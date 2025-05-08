@@ -15,22 +15,22 @@
 
 ```yml
     sources:
-      - name: # Use the name of the application in the application catalogue
-        description: # Use the description of the application from the application catalogue 
-        schema: # Specify the schema name
-        loader: # Specify the specific integration that loads the data, by its canonical name in the integration catalogue
+      - name:                             # Use the name of the application in the application catalogue
+        description:                      # Use the description of the application from the application catalogue 
+        schema:                           # Specify the schema name
+        loader:                           # Specify the specific integration that loads the data, by its canonical name in the integration catalogue
         loaded_at_field: "{{ var('loaded_at_expression') }}"
         freshness:
           warn_after: { count: 365, period: day }
         tables:
-          - name: # Use a clear, concise logical name for the table entity
-            description: # Use the canonical description from the data catalogue
-            identifier: # Specify the precise table name
+          - name:                         # Use a clear, concise logical name for the table entity
+            description:                  # Use the canonical description from the data catalogue
+            identifier:                   # Specify the precise table name
             config:
               meta:
-                infosec: # Specify the Security level of the table, as listed in the data catalogue
+                infosec:                  # Specify the Security level of the table, as listed in the data catalogue
                 logical_data_entities: [] # List the logical data entities that are associated with this table, as listed in the data catalogue
-            columns: [] # At present it is not necessary to document columns in the data source.
+            columns: []                   # At present it is not necessary to document columns in the data source.
 ```
 
 > [!IMPORTANT]  
