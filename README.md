@@ -3,8 +3,15 @@
 > [!CAUTION]  
 > This document is in DRAFT
 
-- [Standard](#standard)
-- [Example Change](#example-change)
+---
+
+## Contents
+- [1 - Standard](#1---standard)
+- [2 - Example Change](#2---example-change)
+
+---
+
+## 1 - Standard  
 
 ```yml
     sources:
@@ -32,7 +39,7 @@
 
 ---
 
-## Example Change
+## 2 - Example Change
 
 ```diff
     sources:
